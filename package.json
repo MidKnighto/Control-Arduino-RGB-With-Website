@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "johnny-five": "^2.1.0",
+    "ws": "^8.5.0"
+  }
+}
