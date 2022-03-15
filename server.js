@@ -8,7 +8,10 @@ var led;
 const WebSocket = require('ws');
 const wss = new WebSocket.Server({ port: 8080 });
 
-app.listen(port, () => { console.log("We are live") })
+app.listen(port, () => { 
+    console.log("We are live")
+ })
+ 
 app.use('/color', express.static('public'));
 
 
