@@ -1,5 +1,4 @@
 const express = require('express');
-const { status } = require('express/lib/response');
 const app = express();
 const port = 3000;
 var five = require('johnny-five');
