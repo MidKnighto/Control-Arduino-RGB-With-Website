@@ -2,21 +2,20 @@ const express = require('express');
 const app = express();
 const port = 3000;
 var five = require('johnny-five');
-var board = new five.Board();
+var board = new five.Board({})
 var led;
-
 const WebSocket = require('ws');
 const wss = new WebSocket.Server({ port: 8080 });
 
 app.listen(port, () => { 
     console.log("We are live")
  })
- 
+
 app.use('/color', express.static('public'));
 
 
 board.on('ready', function () {
- 
+
     var led = new five.Led.RGB({
         pins: {
             red: 11,
@@ -24,6 +23,9 @@ board.on('ready', function () {
             blue: 9
         },
         isAnode: true
+    });
+    this.repl.inject({
+        led : led
     });
 
 

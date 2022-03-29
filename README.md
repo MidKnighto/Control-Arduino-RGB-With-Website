@@ -15,3 +15,7 @@ Blue leg.
 ### Initiating
 
 Before activating the code with Node.js, please upload the Firmata to your board.
+
+## Troubleshooting
+
+If the program initiates on the wrong port, you can specify the port in the "Board" object.
