@@ -12,6 +12,8 @@ This project uses a common anode RGB light. The correct wiring for this project 
 Red leg, the 5V pin to be connected to the Anode, pin 10 to be connected to the Green leg, and pin 9 to be connected to the 
 Blue leg.
 
+![Sketch](https://github.com/MidKnighto/Control-Arduino-RGB-With-Website/blob/master/Assets/Untitled%20Sketch%202_bb.png)
+
 ### Initiating
 
 Before activating the code with Node.js, please upload the Firmata to your board.
